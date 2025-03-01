@@ -7,7 +7,11 @@
 }
 
 .facts-page{
-    background-color: aqua;
+    background-color: rgb(6, 99, 99);
+}
+
+.gallery-page{
+    background-color: #2c79ed;
 }
 
 .navbar{
@@ -30,4 +34,21 @@
 
 .facts-content-div{
     margin-left: 10%;
+}
+
+.gallery-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-content button {
+    border-radius: 30%;
+    padding: 1%;
+    margin: 1%;
+    background-color: gray;
+    border-color: black;
+    font-weight: bold;
+    font-size: x-large;
+    height: 1%;
 }
