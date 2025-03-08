@@ -52,3 +52,8 @@
     font-size: x-large;
     height: 1%;
 }
+
+.gallery-content button:hover{
+    background-color: black;
+    color: gray;
+}
