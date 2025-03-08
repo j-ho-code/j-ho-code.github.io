@@ -6,8 +6,24 @@ const imageGallery = [
     "https://cdn.pixabay.com/photo/2016/08/30/07/52/minecraft-1629979_1280.png"
 ]
 
-const imageElement = document.getElementById("gallaery-image");
+const imageElement = document.getElementById("gallery-image");
 const prevButton = document.getElementById("priv-btn");
 const nextButton = document.getElementById("next-btn");
 
 let currentImgIndex = 0;
+
+function updateImage() {
+    imageElement.src = imageGallery[currentImgIndex];
+}
+
+nextButton.addEventListener("click", function(){
+    currentImgIndex = (currentImgIndex + 1) % imageGallery.length
+    updateImage()
+});
+
+prevButton.addEventListener("click", function(){
+    currentImgIndex = (currentImgIndex - 1 + imageGallery.length) % imageGallery.length
+    updateImage()
+});
+
+updateImage();
